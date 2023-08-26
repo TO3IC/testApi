@@ -5,7 +5,11 @@ var app = Express()
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded())
 
-app.post("/",()=>{
+app.get("/",(req,res)=>{
+    res.end()
+})
+
+app.post("/", (req, res)=>{
     
 })
 
