@@ -3,7 +3,7 @@ import Express from "express";
 import cors from "cors";
 var app = Express()
 
-app.use(cors({ origin: "https://test-api-alpha.vercel.app/" }))
+app.use(cors({ origin: "https://test-api-sigma-two.vercel.app/" }))
 
 
 app.use(bodyParser.json())
