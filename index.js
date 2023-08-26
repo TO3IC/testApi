@@ -2,6 +2,7 @@ import bodyParser from "body-parser";
 import Express from "express";
 import cors from "cors";
 var app = Express()
+var data
 
 app.use(cors({ origin: "*" }))
 
@@ -10,11 +11,11 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded())
 
 app.get("/", (req, res) => {
-    res.end("Hello world")
+    res.end(data)
 })
 
 app.post("/api/post-something",(req,res)=>{
-    res.json(req.params)
+    data = req.params
 })
 
 app.listen(4000, () => {
