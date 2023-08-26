@@ -13,10 +13,6 @@ app.get("/", (req, res) => {
     res.end("Hello world")
 })
 
-app.post("/", (req, res) => {
-
-})
-
 app.listen(4000, () => {
     console.log("API hosted on local host 4000")
 })
